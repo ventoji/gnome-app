@@ -1,0 +1,47 @@
+.header {
+   // background-color: coral;
+
+    height: 25vh;
+    // background-image: linear-gradient( to right bottom,  rgba(coral, 0.8),    rgba(orange, 0.8));
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+        height: 45vh;
+        flex-wrap: wrap;
+    }
+    
+    &__title {
+        margin: 0;
+        padding-left: 2rem;
+        padding-top: 2rem;
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-primary-dark-1;
+            }
+        }
+    }
+
+    &__form{
+        width: 25%;
+        margin: 1rem;
+
+      
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 80vw;
+        }
+    }
+
+    &__help{
+        padding: 2rem;
+        color: white;
+    }
+}
+
