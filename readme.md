@@ -25,19 +25,20 @@
     ```shell
     npm run build:dev
     npm run dev-server
-    npm run start
     ```
-
+    
    Other option to run locally using express is executing this command.
-    ```shell
+   
+   ```shell
     npm run start
     ```
 
     To build for production, you must follow the following steps:
+        
+  ```shell
+  npm run build:prod
+  ```
 
-```shell
-npm run build:prod
-```
     Before building for production you should define .env variables: PUBLIC_URL and SUBDIRECTORY, then you can copy all the files generated inside public folder. In case you use APACHE server as is the case of this project you should create .htacces file to keep react router working properly. 
 
     To run unitary tests, use this command:
