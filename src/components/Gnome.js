@@ -39,7 +39,7 @@ const Gnome = (props) => {
     
                     <div className="gnome__professions">
                         <span className="gnome__personal-info-title"> Professions: </span>
-                            { professions &&  ( professions.map((p, i) => (
+                            { (professions.length === 0 || professions === undefined) ? <p className="gnome__personal-info-title"> No profession </p> : ( professions.map((p, i) => (
                                 <p key={i} className="gnome__personal-info-item gnome__personal-info-item--profession">{ p} </p>
                             )))}
                     </div>

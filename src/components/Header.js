@@ -1,22 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import GnomeFilterContainer from '../container/GnomeFilterContainer';
+import { withRouter } from 'react-router-dom';
+import {connect} from 'react-redux';
+import { setTextFilter } from '../actions/filter';
+import { bindActionCreators } from 'redux';
 
-const Header = () => {
+const Header = ({setTextFilter, history}) => {
  
+  const handleGoHome = () => {
+    setTextFilter('');
+    history.push(`${process.env.SUBDIRECTORY ? process.env.SUBDIRECTORY  : '/'}`);
+  }
   return (
       <div>
-        <h1 className="header__title">
-          <Link to={`${process.env.SUBDIRECTORY ? process.env.SUBDIRECTORY  : '/'}`} > Gnome App </Link> 
+        <h1 className="header__title" onClick={handleGoHome}>
+         Gnome App
         </h1>
         <header className="header">    
             <div className="header__logo">
-              <Link to={`${process.env.SUBDIRECTORY ? process.env.SUBDIRECTORY  : '/'}`} >
-              <p className="header__text"> 
+            
+              <p className="header__text" onClick={handleGoHome}> 
               <svg className="icon">
                 <use xlinkHref="img/sprite.svg#icon-home"></use>
               </svg> HOME </p>
-              </Link> 
+  
             </div>
               
             <div className="header__form">
@@ -34,4 +42,9 @@ const Header = () => {
     );
 };
 
-export default Header;
+const mapDispatchToProps = (dispatch) =>
+    bindActionCreators({ setTextFilter} , dispatch);
+
+const HeaderContainer = connect(undefined,mapDispatchToProps)(Header)
+
+export default withRouter(HeaderContainer);

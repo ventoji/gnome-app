@@ -16,10 +16,6 @@ module.exports = (env) => {
             prev[`process.env.${next}`] = JSON.stringify(env1[next]);
             return prev;
           }, {});
-  
-
-   // console.log(publicPathSite);
-
     return {
         entry: './src/index.js',
     output :{

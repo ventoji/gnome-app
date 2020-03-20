@@ -21,6 +21,10 @@ const PopulationList = (props) => {
 
       useEffect(() => {
         fetchGnomes();
+
+        return () => {
+          console.log("cleanup");
+        };
       },[]); 
 
     const showLoading = () => (

@@ -20,11 +20,16 @@
     cd gnome-app/
     npm install
     ```
-    To run locally, build the app for development executing the following commands
+    To run locally, build the app for development executing the following commands.
 
     ```shell
     npm run build:dev
     npm run dev-server
+    npm run start
+    ```
+
+   Other option to run locally using express is executing this command.
+    ```shell
     npm run start
     ```
 
@@ -33,7 +38,7 @@
     ```shell
     npm run build:prod
     ```
-    Before building for production you should define .env variables: PUBLIC_URL and SUBDIRECTORY, then you ca copy all the files generated inside public folder. In case you use APACHE server as is the case of this project you should create .htacces file to keep react router working properly. 
+    Before building for production you should define .env variables: PUBLIC_URL and SUBDIRECTORY, then you can copy all the files generated inside public folder. In case you use APACHE server as is the case of this project you should create .htacces file to keep react router working properly. 
 
     To run unitary tests, use this command:
 
@@ -55,7 +60,7 @@ A quick look at the top-level files and directories you'll see in the project is
     ├── package.json
     └── README.md
 
-1.  **`/src`**: This directory contains all of the code related to what you will see on the front-end of the app on the browser, such as the site header, page template and the components this app has been structured. 
+1.  **`/src`**: This directory contains all of the code related to build the UI to render app on the browser, such as the site header, page template, the components, the reducer, actions and unitary tests. To follow and understand the sequence execution of the project start reviewing index.js. APP.js contains the router of the app, and the store folder contains the reducer implementation.
 
 2.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
