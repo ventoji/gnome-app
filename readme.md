@@ -33,7 +33,7 @@
     ```shell
     npm run build:prod
     ```
-    Before building for production you should define .env variables: PUBLIC_URL and SUBDIRECTORY, then you ca copy all the files generated inside public folder. In case you use APACHE server as is the case of this project you should create .htacces file to keep react router working properly. 
+    Before building for production you should define .env variables: PUBLIC_URL and SUBDIRECTORY, then you can copy all the files generated inside public folder. In case you use APACHE server as is the case of this project you should create .htacces file to keep react router working properly. 
 
     To run unitary tests, use this command:
 
