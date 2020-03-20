@@ -17,7 +17,7 @@
     Navigate into your new site’s directory and start it up. To install run the following command.
 
      ```shell
-    cd gnome-app/
+    cd gnome-app-master/
     npm install
     ```
     To run locally, build the app for development executing the following commands
