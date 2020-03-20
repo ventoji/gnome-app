@@ -23,7 +23,7 @@ const PopulationList = (props) => {
         fetchGnomes();
 
         return () => {
-          console.log("cleanup");
+         // console.log("cleanup");
         };
       },[]); 
 
