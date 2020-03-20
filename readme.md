@@ -1,5 +1,5 @@
 <h1 align="center">
-  AXA team app
+  Gnome app
 </h1>
 
 <p>  This app displayes a list of inhabitants of Brastlewark town. This application was built using React, Redux and Webpack. Redux is used to retrieve the data coming from https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json in the state app, allowing to handle data easily. Three states are taken into account: the complete list of inhabitans, one gnome item  and the filter.</p>
@@ -33,7 +33,7 @@
     ```shell
     npm run build:prod
     ```
-    Before build for production you should define .env variables: PUBLIC_URL and SUBDIRECTORY, then you ca copy all the files generated inside public folder. In case you use APACHE server as is the case of this project you should create .htacces file to keep react router working properly. 
+    Before building for production you should define .env variables: PUBLIC_URL and SUBDIRECTORY, then you ca copy all the files generated inside public folder. In case you use APACHE server as is the case of this project you should create .htacces file to keep react router working properly. 
 
     To run unitary tests, use this command:
 
