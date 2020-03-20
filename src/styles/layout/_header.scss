@@ -15,8 +15,10 @@
     
     &__title {
         margin: 0;
-        padding-left: 2rem;
-        padding-top: 2rem;
+       // padding-left: 2rem;
+       // padding-top: 2rem;
+        text-align: center;
+        text-transform: uppercase;
 
         a {
             color: white;
@@ -39,9 +41,18 @@
         }
     }
 
-    &__help{
+    &__text{
         padding: 2rem;
         color: white;
+        display: flex;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $color-primary-dark-1;
+        }
     }
+
+
 }
 

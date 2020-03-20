@@ -1,6 +1,7 @@
 export default (state={}, action) => {
   
     const {name, thumbnail, age, height, weight, hair_color, professions, friends} = action;
+    
     switch (action.type){
 
         case 'ADD_GNOME_ITEM':
@@ -19,4 +20,4 @@ export default (state={}, action) => {
             return state;
 
     }
-}
+};

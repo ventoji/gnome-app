@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 
-import gnomeReducer from '../reducer/gnome'
-import filtersReducer from '../reducer/filter'
-import gnomesReducer from '../reducer/gnomes'
+import gnomeReducer from '../reducer/gnome';
+import filtersReducer from '../reducer/filter';
+import gnomesReducer from '../reducer/gnomes';
 
 const rootReducer = () =>
   combineReducers({

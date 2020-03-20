@@ -6,7 +6,7 @@ import PopulationList from '../components/PopulationList';
 import selectGnomes from '../selectors/gnome';
 
 
-const mapStateToProps = (state, props) => {
+const mapStateToProps = (state) => {
 
     return {
       gnome: state.gnome,
@@ -15,7 +15,7 @@ const mapStateToProps = (state, props) => {
     };
   };
 
-const mapDispatchToProps = (dispatch, props) =>
+const mapDispatchToProps = (dispatch) =>
     bindActionCreators({ addGnomeItem, addGnomes} , dispatch);
 
 const PopulationListContainer = connect(mapStateToProps,mapDispatchToProps)(PopulationList);

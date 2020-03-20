@@ -2,8 +2,7 @@ import {connect} from 'react-redux';
 import Gnome from '../components/Gnome';
 import { withRouter } from 'react-router-dom';
 
-const mapStateToProps = (state, props) => {
-    // console.log('props',props);
+const mapStateToProps = (state) => {
     return {
         state: state.gnome
     };

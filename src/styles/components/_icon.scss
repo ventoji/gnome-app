@@ -1,0 +1,19 @@
+.icon{
+    height: 3rem;
+    width: 3rem;
+    fill: white;
+    margin-right: 1rem;
+    &:hover {
+        fill: $color-primary-dark-1;
+    }
+
+    &--gnome{
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: $color-primary-light-1;
+
+        &:hover {
+            fill: $color-primary-dark-1;
+        }
+    }
+}

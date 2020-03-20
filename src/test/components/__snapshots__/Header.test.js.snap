@@ -1,17 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Header coorectly 1`] = `
-<header
-  className="header"
->
+<div>
   <h1
     className="header__title"
   >
     <Link
       to="/"
     >
-       AXA team app 
+       Gnome App 
     </Link>
   </h1>
-</header>
+  <header
+    className="header"
+  >
+    <div
+      className="header__logo"
+    >
+      <Link
+        to="/"
+      >
+        <p
+          className="header__text"
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="img/sprite.svg#icon-home"
+            />
+          </svg>
+           HOME 
+        </p>
+      </Link>
+    </div>
+    <div
+      className="header__form"
+    >
+      <Connect(GnomeFilter) />
+    </div>
+    <Link
+      to="/info-app"
+    >
+      <p
+        className="header__text"
+      >
+        <svg
+          className="icon"
+        >
+          <use
+            xlinkHref="img/sprite.svg#icon-notification"
+          />
+        </svg>
+         HELP
+      </p>
+    </Link>
+  </header>
+</div>
 `;

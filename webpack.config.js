@@ -52,6 +52,16 @@ module.exports = (env) => {
             ]
         },
         {
+            test: /\.(woff2|woff|ttf|svg|eot)$/,
+            loader: 'file-loader',
+            options: {
+                 name: '[name].[ext]',
+                 outputPath: 'assets',
+                 publicPath:  publicPathSite + 'assets',
+                 postTransformPublicPath: (p) => `__webpack_public_path__ + ${p}`,
+               },
+        },
+        {
             test: /\.html$/,
             use: [{
                 loader: 'ejs-loader'

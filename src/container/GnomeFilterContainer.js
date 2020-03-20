@@ -4,15 +4,14 @@ import { bindActionCreators } from 'redux';
 import GnomeFilter from '../components/GnomeFilter';
 
 
-const mapStateToProps = (state, props) => {
-  // console.log(state)
+const mapStateToProps = (state) => {
     return {
       state: state.filters,
       gnome: state.gnome
     };
   };
 
-const mapDispatchToProps = (dispatch, props) =>
+const mapDispatchToProps = (dispatch) =>
     bindActionCreators({ setTextFilter} , dispatch);
 
 const GnomeFilterContainer = connect(mapStateToProps,mapDispatchToProps)(GnomeFilter);

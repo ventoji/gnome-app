@@ -12,6 +12,11 @@
         &::placeholder {
             color: rgba($color-primary-light-1, 0.3);
         }
+
+        &:focus {
+            outline: none;
+            width: 100%;
+        }
      
     }
 

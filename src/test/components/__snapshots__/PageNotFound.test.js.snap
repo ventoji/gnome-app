@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly render PageNotFound  1`] = `
+<div
+  className="not-found"
+>
+  <p>
+     It seems the page you are trying to access doesn't exits
+  </p>
+  <Link
+    to="/"
+  >
+     Please come back home 
+  </Link>
+</div>
+`;
