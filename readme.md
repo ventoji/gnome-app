@@ -6,7 +6,7 @@
 
 <p> React is used to render components and to build the UI. The functions of the components are: to render list of inhabitans, to render one gnome with its personal information, header, filter, a small description for users and 404 error. The filter component allows to look for a gnome using this name.</p>
 
-<p> Finally, components are styled using SAAS to generate the CSS code and a set of unitary tests using Jest is implemented to check the basic funcionalities of the components.</p>
+<p> Finally, components are styled using SAAS to generate the CSS code and a set of unitary tests using Jest has been implemented to check the basic funcionalities of app.</p>
 
 
 
@@ -20,28 +20,27 @@
     cd gnome-app-master/
     npm install
     ```
-    To run locally, build the app for development executing the following commands.
+    To run locally, first of all build the app with the first script then execute dev-server script:
 
     ```shell
     npm run build:dev
     npm run dev-server
-    ```
-    
-   Other option to run locally using express is executing this command.
+    ``` 
+   Other option to run locally using express is executing the script below:
    
    ```shell
-    npm run start
-    ```
+   npm run start 
+   ```
 
-    To build for production, you must follow the following steps:
+   To build for production, you use the following script:
         
   ```shell
   npm run build:prod
   ```
 
-    Before building for production you should define .env variables: PUBLIC_URL and SUBDIRECTORY, then you can copy all the files generated inside public folder. In case you use APACHE server as is the case of this project you should create .htacces file to keep react router working properly. 
+Before building for production you should define .env variables: PUBLIC_URL and SUBDIRECTORY for your own hosting server, then you can copy all the files generated inside public folder to that location. In case you use APACHE server as is the case for this project you should create .htacces file to keep react router working properly. 
 
-    To run unitary tests, use this command:
+ To run unitary tests, use this command:
 
     ```shell
     npm run test
@@ -61,7 +60,7 @@ A quick look at the top-level files and directories you'll see in the project is
     ├── package.json
     └── README.md
 
-1.  **`/src`**: This directory contains all of the code related to build the UI to render app on the browser, such as the site header, page template, the components, the reducer, actions and unitary tests. To follow and understand the sequence execution of the project start reviewing index.js. APP.js contains the router of the app, and the store folder contains the reducer implementation.
+1.  **`/src`**: This directory contains all of the code related to build the UI to render app on the browser, such as the site header, page template, components, reducer, actions and unitary tests. To follow and understand the app execution sequence start reviewing index.js, where APP.js contains the router of the app, and the store folder contains the reducer implementation. The main components are: Gnome.js for see detailed information of one gnome, PopulationList.js to retrieve all the data for all gnomes and GnomeFilter.js to look for one of them by its name.
 
 2.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
