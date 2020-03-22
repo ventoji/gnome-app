@@ -4,6 +4,10 @@
     justify-content: space-between;
     align-items: center;
 
+    a {
+        text-decoration: none;
+    }
+
     @media only screen and (max-width: $bp-small) {
         height: 35vh;
         flex-wrap: wrap;

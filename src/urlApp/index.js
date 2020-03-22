@@ -1,0 +1,1 @@
+export default `${process.env.SUBDIRECTORY ? process.env.SUBDIRECTORY  : '/'}`;

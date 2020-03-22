@@ -12,11 +12,9 @@ import './styles/style.scss';
 const store = configureStore;
 const state = store.getState();
 
-// console.log(state)
+ // console.log(state)
 
-// const unsubscribe = store.subscribe(() => console.log(store.getState())) 
-
-// const jsx = <p> Initial render </p>;
+ // const unsubscribe = store.subscribe(() => console.log(store.getState())) 
 
 const jsx = (
     <Provider store={store}> 

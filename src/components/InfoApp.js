@@ -8,7 +8,7 @@ const InfoApp = () => {
             you will see its personal information.</p>
 
             <p> This app is built using React, Redux and Webpack tools. For more information about coding see
-            the github repository</p>
+           <a href="https://github.com/ventoji/gnome-app" target="_blank" > GitHub repository </a> </p>
         </div>
     );
 };

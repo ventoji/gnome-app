@@ -46,3 +46,14 @@ export const gnomeItem = {
     professions:['Metalworker','Woodcarver','Stonecarver',' Tinker','Tailor','Potter'],
     friends:['Cogwitz Chillwidget','Tinadette Chillbuster']
 };
+
+export const gnomeItem2 = {
+    name:'Malbin Chromerocket',
+    thumbnail:'http://www.publicdomainpictures.net/pictures/30000/nahled/maple-leaves-background.jpg',
+    age:166,
+    weight:35.88665,
+    height:106.14395,
+    hair_color:'Red',
+    professions:['Cook','Baker','Miner'],
+    friends:['Fizwood Voidtossle']
+};

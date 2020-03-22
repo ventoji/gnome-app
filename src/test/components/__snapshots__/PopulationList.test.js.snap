@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Gnome Filter Component The display Element Should render component properly 1`] = `
+<section
+  className="population-home"
+>
+  <div
+    className="population"
+  >
+    <div
+      className="population-list"
+    >
+      <ul
+        className="population__gnomes"
+      >
+        <li
+          className="population__list-item"
+          key="0"
+        >
+          <p>
+             
+            Tobus Quickwhistle
+                 
+          </p>
+          <span>
+             
+            <Link
+              className="population__list-link"
+              onClick={[Function]}
+              to="/gnome/0"
+            >
+              <SvgIcon
+                svgClass="icon--gnome"
+                svgName="img/sprite.svg#icon-eye"
+              />
+            </Link>
+              
+          </span>
+        </li>
+        <li
+          className="population__list-item"
+          key="1"
+        >
+          <p>
+             
+            Fizkin Voidbuster
+                 
+          </p>
+          <span>
+             
+            <Link
+              className="population__list-link"
+              onClick={[Function]}
+              to="/gnome/1"
+            >
+              <SvgIcon
+                svgClass="icon--gnome"
+                svgName="img/sprite.svg#icon-eye"
+              />
+            </Link>
+              
+          </span>
+        </li>
+        <li
+          className="population__list-item"
+          key="2"
+        >
+          <p>
+             
+            Malbin Chromerocket
+                 
+          </p>
+          <span>
+             
+            <Link
+              className="population__list-link"
+              onClick={[Function]}
+              to="/gnome/2"
+            >
+              <SvgIcon
+                svgClass="icon--gnome"
+                svgName="img/sprite.svg#icon-eye"
+              />
+            </Link>
+              
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+`;

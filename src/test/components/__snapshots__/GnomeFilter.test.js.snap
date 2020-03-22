@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Gnome Filter Component The display element Should render component properly 1`] = `
+<div
+  className="gnome-form__input"
+>
+  <input
+    className="gnome-form__input-text"
+    disabled={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Try finding some gnome"
+    type="text"
+  />
+  <button
+    className="gnome-form__button"
+  >
+    <svg
+      className="gnome-form__icon"
+    >
+      <use
+        xlinkHref="/img/sprite.svg#icon-magnifying-glass"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`The Gnome Filter Component The display element Should render component properly with all data correctly 1`] = `
+<div
+  className="gnome-form__input"
+>
+  <input
+    className="gnome-form__input-text"
+    disabled={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Try finding some gnome"
+    type="text"
+  />
+  <button
+    className="gnome-form__button"
+  >
+    <SvgIcon
+      svgClass="gnome-form__icon"
+      svgName="img/sprite.svg#icon-magnifying-glass"
+    />
+  </button>
+</div>
+`;

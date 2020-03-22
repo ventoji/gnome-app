@@ -1,22 +1,28 @@
 import React, { useEffect } from 'react';
 import { history } from '../components/App';
+import pathApp from '../urlApp/index';
 
-const Gnome = (props) => {
-    const {
-            name='', 
-            thumbnail='', 
-            age='',
-            hair_color='' ,
-            height='',
-            weight='', 
-            professions =[], 
-            friends=[]} = props.state;
-    const {location, match} = props;
+const Gnome = ({ name, 
+    thumbnail, 
+    age,
+    hair_color,
+    height,
+    weight, 
+    professions=[],
+    friends=[],
+    match}) => {
+
+   const isIdChanged = id => ((/[^$,\.\d]/.test(id) || id.length > 4));
+   
 
     useEffect(() => {
-        if(location.pathname !== match.url) {
-            history.push(`${process.env.SUBDIRECTORY}`);
-        }
+        if(isIdChanged(match.params.id)) {
+            history.push(`${pathApp}`);
+           }
+
+           return () => {
+            // console.log("cleanup");
+           };
       },[]);
 
     return (
@@ -46,9 +52,10 @@ const Gnome = (props) => {
             
                     <div className="gnome__friends">
                         <span className="gnome__personal-info-title"> Friends: </span>
-                            { (friends.length === 0 || friends === undefined) ? <p className="gnome__personal-info-title"> No friends </p> : friends.map((f, i) => (
-                                <p key={i} className="gnome__personal-info-item gnome__personal-info-item--profession">{ f} </p>
-                            ))}
+                            { (friends.length === 0 || friends === undefined) ? <p className="gnome__personal-info-title"> No friends </p> : friends.map((f, i) => {
+                               
+                                return <p key={i} className="gnome__personal-info-item gnome__personal-info-item--profession">{ f} </p>
+                            })}
                     </div>
                 </div>
             </div>

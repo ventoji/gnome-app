@@ -6,16 +6,13 @@ import PopulationList from '../components/PopulationList';
 import selectGnomes from '../selectors/gnome';
 
 
-const mapStateToProps = (state) => {
-
-    return {
+const mapStateToProps = state => ({
       gnome: state.gnome,
       filters: state.filters,
       gnomes: selectGnomes(state.gnomes, state.filters)
-    };
-  };
+});
 
-const mapDispatchToProps = (dispatch) =>
+const mapDispatchToProps = dispatch =>
     bindActionCreators({ addGnomeItem, addGnomes} , dispatch);
 
 const PopulationListContainer = connect(mapStateToProps,mapDispatchToProps)(PopulationList);

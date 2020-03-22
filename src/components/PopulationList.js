@@ -1,6 +1,7 @@
 import React, {useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import iconEye from '../../img/svg-icons/eye.svg';
+import SvgIcon from './SvgIcon';
+import pathApp from '../urlApp/index';
 
 const PopulationList = (props) => {
 
@@ -29,7 +30,7 @@ const PopulationList = (props) => {
 
     const showLoading = () => (
          isLoading ? <div className="loader">
-         <img className="loader__image" src={`${process.env.SUBDIRECTORY}/img/Spinner-1s-200px.gif`}/>
+         <img className="loader__image" src={`${pathApp}img/Spinner-1s-200px.gif`}/>
      </div> : ''
       );
 
@@ -38,10 +39,11 @@ const PopulationList = (props) => {
       return props.gnomes.map((gnome, i) =>  <li className="population__list-item" key={i}>
     
       <p> {gnome.name }     </p>  
-      <span> <Link className="population__list-link"  to={`${process.env.SUBDIRECTORY}/gnome/${gnome.id}`} onClick={ () => {
+      <span> <Link className="population__list-link"  to={`${pathApp}gnome/${gnome.id}`} onClick={ () => {
         props.addGnomeItem(gnome);
   
-    }}>  <img src={iconEye} className="icon--gnome" alt="see gnome" />
+    }}>   
+    <SvgIcon svgClass="icon--gnome" svgName="img/sprite.svg#icon-eye" />
       </Link>  </span> 
   </li> );
     };

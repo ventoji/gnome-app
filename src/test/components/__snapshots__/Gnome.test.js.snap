@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Gnome Detail Component The display element Should display component properly 1`] = `
+<section
+  className="gnome-content"
+>
+  <h1
+    className="gnome__name"
+  >
+    Tobus Quickwhistle
+     
+  </h1>
+  <div
+    className="gnome"
+  >
+    <div
+      className="gnome__photo"
+    >
+      <figure
+        className="gnome__photo-container "
+      >
+        <img
+          alt=" profile photo"
+          className="gnome__img"
+          src="http://www.publicdomainpictures.net/pictures/10000/nahled/thinking-monkey-11282237747K8xB.jpg"
+        />
+      </figure>
+    </div>
+    <div
+      className="gnome__personal-info"
+    >
+      <ul>
+        <li
+          className="gnome__personal-info-item"
+        >
+           
+          <span
+            className="gnome__personal-info-title"
+          >
+             Age: 
+          </span>
+           
+          <p
+            className="gnome__personal-info-item"
+          >
+             
+            306
+          </p>
+        </li>
+        <li
+          className="gnome__personal-info-item"
+        >
+           
+          <span
+            className="gnome__personal-info-title"
+          >
+             height: 
+          </span>
+           
+          <p
+            className="gnome__personal-info-item"
+          >
+             
+            107.75835
+          </p>
+        </li>
+        <li
+          className="gnome__personal-info-item"
+        >
+           
+          <span
+            className="gnome__personal-info-title"
+          >
+             Weight: 
+          </span>
+           
+          <p
+            className="gnome__personal-info-item"
+          >
+             
+            39.065952
+          </p>
+        </li>
+        <li
+          className="gnome__personal-info-item"
+        >
+           
+          <span
+            className="gnome__personal-info-title"
+          >
+             Hair color: 
+          </span>
+           
+          <p
+            className="gnome__personal-info-item"
+          >
+             
+            Pink
+          </p>
+        </li>
+      </ul>
+      <div
+        className="gnome__professions"
+      >
+        <span
+          className="gnome__personal-info-title"
+        >
+           Professions: 
+        </span>
+        <p
+          className="gnome__personal-info-item gnome__personal-info-item--profession"
+        >
+          Metalworker
+           
+        </p>
+        <p
+          className="gnome__personal-info-item gnome__personal-info-item--profession"
+        >
+          Woodcarver
+           
+        </p>
+        <p
+          className="gnome__personal-info-item gnome__personal-info-item--profession"
+        >
+          Stonecarver
+           
+        </p>
+        <p
+          className="gnome__personal-info-item gnome__personal-info-item--profession"
+        >
+           Tinker
+           
+        </p>
+        <p
+          className="gnome__personal-info-item gnome__personal-info-item--profession"
+        >
+          Tailor
+           
+        </p>
+        <p
+          className="gnome__personal-info-item gnome__personal-info-item--profession"
+        >
+          Potter
+           
+        </p>
+      </div>
+      <div
+        className="gnome__friends"
+      >
+        <span
+          className="gnome__personal-info-title"
+        >
+           Friends: 
+        </span>
+        <p
+          className="gnome__personal-info-item gnome__personal-info-item--profession"
+        >
+          Cogwitz Chillwidget
+           
+        </p>
+        <p
+          className="gnome__personal-info-item gnome__personal-info-item--profession"
+        >
+          Tinadette Chillbuster
+           
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+`;

@@ -1,11 +1,10 @@
 import React from 'react';
+import SvgIcon from './SvgIcon';
 
-const GnomeFilter = (props) => {
-
-    const {text} = props.state;
+const GnomeFilter = ({text, setTextFilter}) => {
 
     const onTextChange = (e) => {
-        props.setTextFilter(e.target.value);
+        setTextFilter(e.target.value);
     }; 
 
     return (
@@ -22,9 +21,7 @@ const GnomeFilter = (props) => {
             onChange={onTextChange}
           />
           <button className="gnome-form__button">
-            <svg className="gnome-form__icon">
-              <use xlinkHref="img/sprite.svg#icon-magnifying-glass"></use>
-            </svg>
+          <SvgIcon svgClass="gnome-form__icon" svgName="img/sprite.svg#icon-magnifying-glass" />
           </button>
 
         </div>

@@ -8,6 +8,8 @@ import Header from './Header';
 import PageNotFound from './PageNotFound';
 import InfoApp from './InfoApp';
 
+import pathApp from '../urlApp/index';
+
 export const history = createBrowserHistory();
 
 const App = () => {
@@ -18,9 +20,9 @@ const App = () => {
                 <main className="main-content">   
 
                     <Switch>
-                    <Route path={`${process.env.SUBDIRECTORY ? process.env.SUBDIRECTORY  : '/'}`} component={PopulationListContainer} exact={true} />
-                    <Route path={`${process.env.SUBDIRECTORY ? process.env.SUBDIRECTORY  : ''}/gnome/:id`} component={GnomeContainer}  scrollBehaviour="none" />
-                    <Route path={`${process.env.SUBDIRECTORY ? process.env.SUBDIRECTORY  : ''}/info-app`} component={InfoApp} />
+                    <Route path={`${pathApp}`} component={PopulationListContainer} exact={true} />
+                    <Route path={`${pathApp}gnome/:id`} component={GnomeContainer}  scrollBehaviour="none" />
+                    <Route path={`${pathApp}info-app`} component={InfoApp} />
                     <Route  component={PageNotFound} />
                     </Switch>
         
