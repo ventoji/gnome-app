@@ -60,7 +60,7 @@ A quick look at the top-level files and directories you'll see in the project is
     ├── package.json
     └── README.md
 
-1.  **`/src`**: This directory contains all of the code related to build the UI to render app on the browser, such as the site header, page template, components, reducer, actions and unitary tests. To follow and understand the app execution sequence start reviewing index.js, where APP.js contains the router of the app, and the store folder contains the reducer implementation. The main components are: Gnome.js for see detailed information of one gnome, PopulationList.js to retrieve all the data for all gnomes and GnomeFilter.js to look for one of them by its name.
+1.  **`/src`**: This directory contains all of the code related to build the UI to render app on the browser, such as the site header, page template, components, reducer, actions and unitary tests. To follow and understand the app execution sequence start reviewing index.js, where APP.js contains the router of the app, and the store folder contains the reducer implementation. The main components are: Gnome.js for seeing detailed information of one gnome, PopulationList.js to retrieve all the data for all gnomes and GnomeFilter.js to look for one of them by its name.
 
 2.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
